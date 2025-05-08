@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>addPersonServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.addPersonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPersonServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.EditPersonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchPersonServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.SearchPersonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetListServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.GetListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addPersonServlet</servlet-name>
+        <url-pattern>/addPersonServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPersonServlet</servlet-name>
+        <url-pattern>/EditPersonServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchPersonServlet</servlet-name>
+        <url-pattern>/SearchPersonServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetListServlet</servlet-name>
+        <url-pattern>/GetListServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

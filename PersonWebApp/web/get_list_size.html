@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>get partial Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Get partial list </h1>
+        <p>Please enter start and end</p>
+        <form action="GetPartialSizeServlet.do" method="get">
+            <table>
+                <tr>
+                    <td>Start index:</td>
+                    <td><input type="text" name="startIndex"></td>
+                </tr>
+                <tr>
+                    <td>End index:</td>
+                    <td><input type="text" name="endIndex"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Get Partial list"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
